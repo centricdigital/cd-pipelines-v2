@@ -1,0 +1,7 @@
+version: "3"
+services:
+
+  pipeline:
+    build: .
+    container_name: pipeline
+    command: ["tail", "-f", "/dev/null"]
