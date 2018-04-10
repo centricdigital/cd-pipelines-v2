@@ -1,1 +1,3 @@
-# cd-pipelines-v2
+# CD Pipelines v2
+
+Using php7-cli
