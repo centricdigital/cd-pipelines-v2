@@ -30,7 +30,8 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \
     && unzip awscli-bundle.zip \
     && ./awscli-bundle/install -b ~/bin/aws \
-    && export PATH=~/bin:$PATH
+    && export PATH=~/bin:$PATH \
+    && ln -s ~/bin/aws /usr/bin/aws
 
 # Download ECS deployer and install
 RUN curl https://s3-us-west-2.amazonaws.com/cdg-devops/ecs-deploy -o /tmp/ecs-deploy  \
