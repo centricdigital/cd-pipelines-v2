@@ -1,7 +1,7 @@
 FROM php:7-cli
 
 # Let the container know that there is no tty
-ENV DEBIAN_FRONTEND noninteractive
+#ENV DEBIAN_FRONTEND noninteractive
 ENV COMPOSER_NO_INTERACTION 1
 
 # Update Distro
