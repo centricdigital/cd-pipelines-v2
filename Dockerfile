@@ -4,6 +4,8 @@ FROM php:7-cli
 #ENV DEBIAN_FRONTEND noninteractive
 ENV COMPOSER_NO_INTERACTION 1
 
+RUN add-apt-repository ppa:ondrej/php
+
 # Update Distro
 RUN apt-get update \
     && apt-get install -my \
