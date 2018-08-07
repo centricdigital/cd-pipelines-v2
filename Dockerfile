@@ -14,7 +14,7 @@ RUN apt-get update \
        jq \
        zip \
        unzip \
-       php7.0-gd 
+       php7.2-gd 
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer \
