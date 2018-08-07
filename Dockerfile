@@ -14,8 +14,6 @@ RUN apt-get update \
        jq \
        zip \
        unzip
-       
-RUN docker-php-ext-configure gd
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer \
