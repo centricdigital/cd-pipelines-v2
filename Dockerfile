@@ -13,7 +13,8 @@ RUN apt-get update \
        gnupg \
        jq \
        zip \
-       unzip
+       unzip \
+       php-gd
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer \
